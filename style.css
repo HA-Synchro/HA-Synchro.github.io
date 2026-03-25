@@ -1,0 +1,107 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+header {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(180dg, #1a1a1a 0%, #121212 100%);
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+.project-card {
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+    border-color: #00ff88;
+}
+
+.jam-game-card {
+    border: 2px solid #333;
+    padding: 10px;
+    margin: 1 0px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.jam-game-card:hover {
+    transform: scale(1.02);
+    border-color: #00ff88;
+}
+
+
+#projects, #jam-games {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* This makes the titles look nice and take up the full width */
+.category-section h2 {
+    margin-left: 20px;
+    margin-top: 40px;
+    border-left: 4px solid #00ff88; /* A nice accent line */
+    padding-left: 15px;
+}
+
+/* This creates the grid ONLY for the cards */
+.projects-grid {
+    display: grid;
+    /* This creates columns that wrap automatically */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 10px;
+    padding: 10px;
+}
+
+.project-card {
+    background: #1f1f1f;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 8px;
+    min-height: 200px; /* Keeps them consistent */
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #00ff88;
+    box-shadow: 0 4px 20px rgba(0, 255, 136, 0.2);
+}
+
+.card-link {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a {
+    color: #00ff88;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    text-decoration: underline;
+}
