@@ -1,11 +1,32 @@
+:root {
+   --bg-deep: #060407;       /* Main Background */
+    --bg-accent: #221932;     /* Secondary Background / Nav */
+    --primary: #9882b9;       /* Brightest Purple (Text/Icons) */
+    --secondary: #775e88;     /* Muted Purple (Secondary Text) */
+    --accent-glow: #722548;   /* Deep Magenta (Glows/Highlights) */
+    --accent-dark: #541533;
+}
+
+
+
+
 body {
-    background-color: #121212;
-    color: #ffffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-deep);
+    color: var(--primary);
+    font-family: 'Inter', -apple-system, sans-serif; /* Modern font vibe */
     margin: 0;
     line-height: 1.6;
 }
-
+/* Add a soft glow background effect */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: radial-gradient(circle at 50% 0%, var(--accent-dark) 0%, transparent 50%);
+    z-index: -1;
+    opacity: 0.4;
+}
 
 header {
     padding: 60px 20px;
@@ -20,13 +41,13 @@ header h1 {
 }
 
 .project-card {
-    border: 2px solid #333;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+    background: rgba(34, 25, 50, 0.6); /* Transparent deep purple */
+    backdrop-filter: blur(10px);        /* This creates the 'glass' effect */
+    border: 1px solid rgba(119, 94, 136, 0.2);
+    padding: 30px;
+    border-radius: 20px;               /* Softer, more rounded corners */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
 .project-card:hover {
     transform: scale(1.02);
     border-color: #00ff88;
@@ -81,10 +102,18 @@ header h1 {
     cursor: pointer;
 }
 
+.project-card h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.project-card p {
+    color: var(--secondary);
+}
 .project-card:hover {
-    transform: translateY(-5px);
-    border-color: #00ff88;
-    box-shadow: 0 4px 20px rgba(0, 255, 136, 0.2);
+    transform: translateY(-12px);
+    border-color: var(--accent-glow);
+    box-shadow: 0 20px 40px rgba(114, 37, 72, 0.3); /* Magenta glow */
 }
 
 .card-link {
@@ -93,15 +122,79 @@ header h1 {
     font-weight: bold;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background: rgba(6, 4, 7, 0.8);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
 nav a {
-    color: #00ff88;
+    color: var(--secondary);
     text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: color 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.3s;
 }
 nav a:hover {
-    text-decoration: underline;
+    color: var(--primary);
+    text-shadow: 0 0 10px var(--primary);
 }
+
+
+
+/* Reveal Animation Logic */
+.reveal {
+    position: relative;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Typography & Hero */
+.hero {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 8vw, 5rem); /* Responsive font size */
+    background: linear-gradient(to bottom, #ffffff, var(--primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: var(--secondary);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Tech Stack Tags inside cards */
+.tech-stack span {
+    font-size: 0.7rem;
+    background: rgba(152, 130, 185, 0.1);
+    padding: 5px 12px;
+    border-radius: 50px;
+    border: 1px solid rgba(152, 130, 185, 0.2);
+    margin-right: 5px;
+}
+

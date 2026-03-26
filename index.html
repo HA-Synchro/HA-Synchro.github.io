@@ -1,67 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Shahbaz Awan | Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <h1 style="text-align: center;">Shahbaz Awan</h1>
-            <nav>
-                <a href="#projects">Projects</a>
-                <a href="#about">About</a>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahbaz Awan | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#jams">Jams</a>
+        <a href="#apps">Apps</a>
+    </nav>
 
-        <section id="hero">
-            <h2 style="text-align: center;">Game Developer and Software Developer</h2>
-            <p style="text-align: center;">Creating immersive experiences through code and design.</p>
+    <main class="container">
+        
+        <section id="hero" class="hero reveal">
+            <h1>Shahbaz Awan</h1>
+            <p class="subtitle">Game Developer & Software Developer</p>
+            <p>Creating immersive experiences through code and design.</p>
         </section>
 
-        <section class="category-section">
+        <section id="projects" class="category-section reveal">
             <h2>My Games</h2>
-            <div class="projects-grid", id="projects">
-                <a href="https://bongopoyo.itch.io/typing-trouble", target="_blank" class="card-link">
+            <div class="projects-grid">
+                
+                <a href="https://bongopoyo.itch.io/typing-trouble" target="_blank" class="card-link">
                     <div class="project-card">
+                        <div class="card-glass"></div>
                         <h3>Typing Trouble</h3>
                         <p>A typing game where there is no backspacing.</p>
+                        <div class="tech-stack"><span>Unity</span><span>C#</span></div>
                     </div>
                 </a>
                 
                 <div class="project-card">
-                <h3>The Hook</h3>
-                <p>A 2D game developed inside godot game engine.</p>    
+                    <div class="card-glass"></div>
+                    <h3>The Hook</h3>
+                    <p>A 2D game developed inside Godot game engine.</p>
+                    <div class="tech-stack"><span>Godot</span><span>GDScript</span></div>
                 </div>
-                 </div>
+
+            </div>
         </section>
 
-        <section class="category-section">
+        <section id="jams" class="category-section reveal">
             <h2>Jam Games</h2>
             <div class="projects-grid">
-                <a href="https://arcanestudiosofficial.itch.io/rage-goal", target="_blank" class="card-link">
+                
+                <a href="https://arcanestudiosofficial.itch.io/rage-goal" target="_blank" class="card-link">
                     <div class="project-card">
+                        <div class="card-glass"></div>
                         <h3>Rage Goal</h3>
-                        <p>A simple arcade game with cubes, you just have to hit the goal</p>
+                        <p>A simple arcade game with cubes, you just have to hit the goal.</p>
+                        <div class="tech-stack"><span>Unity</span><span>Game Jam</span></div>
+                    </div>
+                </a>
+
+                <a href="https://g2playstudios.itch.io/sus-exe" target="_blank" class="card-link">
+                    <div class="project-card">
+                        <div class="card-glass"></div>
+                        <h3>Sus.exe</h3>
+                        <p>Your PC was infected with a malicious file. Find it and free your PC.</p>
+                        <div class="tech-stack"><span>Godot</span><span>Wild Jam</span></div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+    
+        <section id="apps" class="category-section reveal">
+            <h2>Apps</h2>
+            <div class="projects-grid">
+                <a href="https://github.com/HA-Synchro/ProjectManager-MyFirstApp" target="_blank" class="card-link">
+                    <div class="project-card">
+                        <div class="card-glass"></div>
+                        <h3>Task Manager</h3>
+                        <p>A simple tasks manager with multi-tab support built with Python.</p>
+                        <div class="tech-stack"><span>Python</span><span>CustomTkinter</span></div>
                     </div>
                 </a>
             </div>
         </section>
-    
-        <section class="category-section">
-            <h2>Apps</h2>
-                <div class="projects-grid">
-                    <a href="https://github.com/HA-Synchro/ProjectManager-MyFirstApp" target="_blank" class="card-link">
-                        <div class="project-card">
-                            <h3>Task Manager</h3>
-                            <p>Its a simple tasks manager. You can add multiple tasks and create different tabs for different type of tasks, you can also clear them if you want.</p>
-                        </div>
-                    </a>
-                </div>
-        </section>
 
-        <script src="script.js"></script>
-    </body>
+    </main>
+
+    <script src="script.js"></script>
+</body>
 </html>
