@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahbaz Awan | Game Developer & Systems Programmer</title>
+    <meta name="description" content="Portfolio of Shahbaz Awan (Moon In The Halves) - Indie Game Developer specializing in Godot 4, 3D systems, and atmospheric psychological horror games like Phonophobia.">
+    <meta name="keywords" content="Shahbaz Awan, Moon In The Halves, Phonophobia, Godot Developer, Indie Game Developer, Game Programmer, Steam">
+    <meta name="author" content="Shahbaz Awan">
+    
+    <!-- Open Graph / Meta for Social Previews -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ha-synchro.github.io/">
+    <meta property="og:title" content="Shahbaz Awan | Game Developer & Systems Programmer">
+    <meta property="og:description" content="Explore Phonophobia and indie game projects developed by Shahbaz Awan using Godot.">
+    <meta property="og:image" content="https://store.steampowered.com/app/4972930/Phonophobia/">
+
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Ambient Background Glow & Gradients -->
+    <div class="ambient-glow glow-top" aria-hidden="true"></div>
+    <div class="ambient-glow glow-mid" aria-hidden="true"></div>
+    <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="site-header" id="site-header">
+        <div class="header-container">
+            <a href="#hero" class="brand-logo" aria-label="Shahbaz Awan Home">
+                <span class="moon-icon" aria-hidden="true">
+                    <i data-lucide="moon-star"></i>
+                </span>
+                <span class="brand-text">
+                    <span class="brand-name">Shahbaz Awan</span>
+                    <span class="brand-sub">Moon In The Halves</span>
+                </span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#stack" class="nav-link">Toolkit</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="https://store.steampowered.com/app/4972930/Phonophobia/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-steam">
+                    <i data-lucide="gamepad-2"></i>
+                    <span>Wishlist on Steam</span>
+                </a>
+                <!-- Mobile Menu Button -->
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <i data-lucide="menu" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <nav class="nav-mobile" id="nav-mobile" aria-label="Mobile Navigation" hidden>
+            <ul class="mobile-nav-list">
+                <li><a href="#about" class="mobile-link">About</a></li>
+                <li><a href="#projects" class="mobile-link">Projects</a></li>
+                <li><a href="#stack" class="mobile-link">Toolkit</a></li>
+                <li><a href="#contact" class="mobile-link">Contact</a></li>
+                <li class="mobile-cta-item">
+                    <a href="https://store.steampowered.com/app/4972930/Phonophobia/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+                        <i data-lucide="gamepad-2"></i>
+                        <span>Wishlist Phonophobia</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-container">
+                <!-- Status Pill -->
+                <div class="status-pill animate-fade-in">
+                    <span class="pulse-indicator" aria-hidden="true"></span>
+                    <span>Phonophobia Demo Coming Soon to Steam</span>
+                    <a href="https://store.steampowered.com/app/5406210/Phonophobia_Demo/" target="_blank" rel="noopener noreferrer" class="pill-link" aria-label="View Phonophobia Demo on Steam">
+                        <i data-lucide="external-link"></i>
+                    </a>
+                </div>
+
+                <h1 class="hero-title animate-fade-in-delay-1">
+                    Crafting Atmospheric Worlds &amp; Precision Game Systems
+                </h1>
+
+                <p class="hero-subtitle animate-fade-in-delay-2">
+                    Hi, I'm <strong class="highlight-text">Shahbaz Awan</strong> (known as <em>Moon In The Halves</em> / <em>HA-Synchro</em>). I am a game developer and systems programmer specializing in the <strong class="highlight-text">Godot Engine</strong>, tactile mechanics, and psychological horror game architecture.
+                </p>
+
+                <!-- Primary CTA buttons -->
+                <div class="hero-actions animate-fade-in-delay-3">
+                    <a href="#projects" class="btn btn-primary">
+                        <i data-lucide="folder-git-2"></i>
+                        <span>View Work</span>
+                    </a>
+                    <a href="#contact" class="btn btn-glass">
+                        <i data-lucide="send"></i>
+                        <span>Get in Touch</span>
+                    </a>
+                    <a href="https://store.steampowered.com/app/4972930/Phonophobia/" target="_blank" rel="noopener noreferrer" class="btn btn-steam">
+                        <i data-lucide="flame"></i>
+                        <span>Steam Page</span>
+                    </a>
+                </div>
+
+                <!-- Social Bar -->
+                <div class="social-bar animate-fade-in-delay-4" aria-label="Social and Platform Profiles">
+                    <a href="https://github.com/HA-Synchro" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile (@HA-Synchro)">
+                        <i data-lucide="github"></i>
+                        <span class="sr-only">GitHub</span>
+                    </a>
+                    <a href="https://store.steampowered.com/app/4972930/Phonophobia/" target="_blank" rel="noopener noreferrer" class="social-link" title="Steam Developer / Game Page">
+                        <i data-lucide="gamepad-2"></i>
+                        <span class="sr-only">Steam</span>
+                    </a>
+                    <a href="https://moon-in-the-halves.itch.io/" target="_blank" rel="noopener noreferrer" class="social-link" title="itch.io (Moon In The Halves)">
+                        <i data-lucide="play-circle"></i>
+                        <span class="sr-only">itch.io</span>
+                    </a>
+                    <a href="mailto:shahbazawan.dev@gmail.com" class="social-link" title="Send Direct Email">
+                        <i data-lucide="mail"></i>
+                        <span class="sr-only">Direct Email</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-eyebrow">
+                        <i data-lucide="user"></i> Background
+                    </span>
+                    <h2 class="section-title">Engineering Mechanics Where Sound &amp; Tension Converge</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card glass-panel">
+                        <div class="card-icon-badge">
+                            <i data-lucide="cpu"></i>
+                        </div>
+                        <h3>Engineered in Godot</h3>
+                        <p>
+                            Deep technical mastery of Godot 4 and GDScript / C#. From real-time spatial audio processing and custom shader pipelines to robust physics interactions and state machines.
+                        </p>
+                    </div>
+
+                    <div class="about-card glass-panel">
+                        <div class="card-icon-badge">
+                            <i data-lucide="ghost"></i>
+                        </div>
+                        <h3>Atmospheric Horror Design</h3>
+                        <p>
+                            Specializing in sensory dread. My flagship title, <em>Phonophobia</em>, transforms sound from a passive aesthetic into the core mechanic: every click, hum, and frequency can save or betray you.
+                        </p>
+                    </div>
+
+                    <div class="about-card glass-panel">
+                        <div class="card-icon-badge">
+                            <i data-lucide="trophy"></i>
+                        </div>
+                        <h3>Game Jam Tested</h3>
+                        <p>
+                            Proven ability to ideate, prototype, and ship high-impact interactive experiences rapidly. Creator of award-winning titles including Pakistan Game Jam category winner <em>Rage Goal</em>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section class="section projects-section" id="projects">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-eyebrow">
+                        <i data-lucide="sparkles"></i> Portfolio
+                    </span>
+                    <h2 class="section-title">Featured Projects &amp; Games</h2>
+                    <p class="section-subtitle">A collection of commercial productions, experimental mechanics, and jam projects.</p>
+                </div>
+
+                <!-- Featured Flagship: Phonophobia -->
+                <article class="featured-project-card glass-panel">
+                    <div class="featured-badge-ribbon">
+                        <i data-lucide="star"></i> Flagship Production
+                    </div>
+                    <div class="featured-content">
+                        <div class="project-tags">
+                            <span class="tag tag-engine">Godot 4</span>
+                            <span class="tag">3D Psychological Horror</span>
+                            <span class="tag tag-steam">Steam Release</span>
+                            <span class="tag tag-status">Demo Coming Soon</span>
+                        </div>
+                        <h3 class="featured-title">Phonophobia</h3>
+                        <p class="project-description">
+                            A first-person atmospheric psychological horror adventure where sound functions as both your primary sensory guide and your greatest existential threat. Players traverse dark, decaying industrial complexes, restore tactile power grids, manipulate electrical frequency equipment, and solve physical mechanical puzzles while evading anomalous entities that stalk sound waves.
+                        </p>
+                        
+                        <div class="feature-bullets">
+                            <div class="bullet-item">
+                                <i data-lucide="volume-2"></i>
+                                <span>Acoustic stealth &amp; responsive audio detection mechanics</span>
+                            </div>
+                            <div class="bullet-item">
+                                <i data-lucide="zap"></i>
+                                <span>Tactile mechanical puzzle systems &amp; interactive physics</span>
+                            </div>
+                            <div class="bullet-item">
+                                <i data-lucide="eye-off"></i>
+                                <span>Dynamic volumetric lighting &amp; psychological disorientation</span>
+                            </div>
+                        </div>
+
+                        <div class="card-actions">
+                            <a href="https://store.steampowered.com/app/4972930/Phonophobia/" target="_blank" rel="noopener noreferrer" class="btn btn-steam">
+                                <i data-lucide="external-link"></i>
+                                <span>Steam Store Page</span>
+                            </a>
+                            <a href="https://store.steampowered.com/app/5406210/Phonophobia_Demo/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                                <i data-lucide="play"></i>
+                                <span>View Demo Page</span>
+                            </a>
+                            <a href="https://moon-in-the-halves.itch.io/" target="_blank" rel="noopener noreferrer" class="btn btn-glass">
+                                <i data-lucide="gamepad"></i>
+                                <span>Itch.io Playtests</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Grid of other projects -->
+                <div class="projects-grid">
+                    <!-- Project 2: Rage Goal -->
+                    <article class="project-card glass-panel">
+                        <div class="card-top">
+                            <div class="card-header-icon">
+                                <i data-lucide="target"></i>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag tag-engine">Godot 3D</span>
+                                <span class="tag tag-award">Jam Winner</span>
+                            </div>
+                        </div>
+                        <h3 class="card-title">Rage Goal</h3>
+                        <p class="card-desc">
+                            A fast-paced, high-precision 3D arcade physics game testing trajectory control, reflexes, and spatial timing. Won category accolades at the national Pakistan Game Jam.
+                        </p>
+                        <div class="card-tech-meta">
+                            <span><i data-lucide="terminal"></i> GDScript / 3D RigidBody Physics</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://moon-in-the-halves.itch.io/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                <i data-lucide="play-circle"></i>
+                                <span>Play on Itch.io</span>
+                            </a>
+                            <a href="https://github.com/HA-Synchro" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-glass">
+                                <i data-lucide="github"></i>
+                                <span>Source</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Call Of The Void -->
+                    <article class="project-card glass-panel">
+                        <div class="card-top">
+                            <div class="card-header-icon">
+                                <i data-lucide="compass"></i>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag tag-engine">Godot</span>
+                                <span class="tag">Narrative / Psychological</span>
+                            </div>
+                        </div>
+                        <h3 class="card-title">Call Of The Void</h3>
+                        <p class="card-desc">
+                            A somber, deeply atmospheric narrative exploration game addressing themes of mental health, internal isolation, and psychological friction with bespoke ambient soundscapes.
+                        </p>
+                        <div class="card-tech-meta">
+                            <span><i data-lucide="book-open"></i> Non-linear Narrative Architecture</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://moon-in-the-halves.itch.io/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                <i data-lucide="play-circle"></i>
+                                <span>Play on Itch.io</span>
+                            </a>
+                            <a href="https://github.com/HA-Synchro" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-glass">
+                                <i data-lucide="github"></i>
+                                <span>Source</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Sus.Exe -->
+                    <article class="project-card glass-panel">
+                        <div class="card-top">
+                            <div class="card-header-icon">
+                                <i data-lucide="shield-alert"></i>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag tag-engine">Godot</span>
+                                <span class="tag">OS Simulation</span>
+                            </div>
+                        </div>
+                        <h3 class="card-title">Sus.Exe</h3>
+                        <p class="card-desc">
+                            A satirical pseudo-desktop simulation thriller where players interact with file systems, uncover anomalous corrupted executables, and isolate an intrusive synthetic malware entity.
+                        </p>
+                        <div class="card-tech-meta">
+                            <span><i data-lucide="monitor"></i> Custom OS UI System &amp; Event Bus</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://moon-in-the-halves.itch.io/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                <i data-lucide="play-circle"></i>
+                                <span>Play on Itch.io</span>
+                            </a>
+                            <a href="https://github.com/HA-Synchro" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-glass">
+                                <i data-lucide="github"></i>
+                                <span>Source</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Toolkit Section -->
+        <section class="section stack-section" id="stack">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-eyebrow">
+                        <i data-lucide="code-2"></i> Capabilities
+                    </span>
+                    <h2 class="section-title">Skills &amp; Technical Arsenal</h2>
+                    <p class="section-subtitle">Engine architectures, programming languages, and tooling utilized in production.</p>
+                </div>
+
+                <div class="toolkit-grid">
+                    <!-- Category: Engines & Core -->
+                    <div class="toolkit-group glass-panel">
+                        <div class="group-header">
+                            <i data-lucide="layers" class="group-icon"></i>
+                            <h3>Engines &amp; Core Languages</h3>
+                        </div>
+                        <div class="pill-cloud">
+                            <span class="pill pill-primary"><i data-lucide="box"></i> Godot 4.x</span>
+                            <span class="pill pill-primary"><i data-lucide="box"></i> Godot 3.x</span>
+                            <span class="pill"><i data-lucide="code"></i> GDScript</span>
+                            <span class="pill"><i data-lucide="code"></i> C# / .NET</span>
+                            <span class="pill"><i data-lucide="code"></i> Python</span>
+                            <span class="pill"><i data-lucide="code"></i> C++ / GDExtension</span>
+                        </div>
+                    </div>
+
+                    <!-- Category: Gameplay & Architecture -->
+                    <div class="toolkit-group glass-panel">
+                        <div class="group-header">
+                            <i data-lucide="cpu" class="group-icon"></i>
+                            <h3>Systems &amp; Architecture</h3>
+                        </div>
+                        <div class="pill-cloud">
+                            <span class="pill">Hierarchical State Machines</span>
+                            <span class="pill">3D RigidBody Physics</span>
+                            <span class="pill">Custom AI &amp; NavigationMesh</span>
+                            <span class="pill">Procedural Interaction Systems</span>
+                            <span class="pill">Event-Driven Architecture</span>
+                            <span class="pill">Save/Load State Serialization</span>
+                        </div>
+                    </div>
+
+                    <!-- Category: Audio & Atmosphere -->
+                    <div class="toolkit-group glass-panel">
+                        <div class="group-header">
+                            <i data-lucide="headphones" class="group-icon"></i>
+                            <h3>Sound &amp; Atmosphere</h3>
+                        </div>
+                        <div class="pill-cloud">
+                            <span class="pill">3D Spatial &amp; Positional Audio</span>
+                            <span class="pill">Acoustic Occlusion &amp; Bus Routing</span>
+                            <span class="pill">Interactive Soundscapes</span>
+                            <span class="pill">Volumetric Shaders &amp; Post-Processing</span>
+                            <span class="pill">Dynamic Lighting Setup</span>
+                        </div>
+                    </div>
+
+                    <!-- Category: Production & Publishing -->
+                    <div class="toolkit-group glass-panel">
+                        <div class="group-header">
+                            <i data-lucide="wrench" class="group-icon"></i>
+                            <h3>Production &amp; Tools</h3>
+                        </div>
+                        <div class="pill-cloud">
+                            <span class="pill"><i data-lucide="git-branch"></i> Git &amp; GitHub</span>
+                            <span class="pill"><i data-lucide="package"></i> Steamworks SDK</span>
+                            <span class="pill"><i data-lucide="box"></i> Blender (Modeling &amp; Colliders)</span>
+                            <span class="pill"><i data-lucide="palette"></i> Aseprite</span>
+                            <span class="pill"><i data-lucide="terminal"></i> Linux &amp; Windows CI</span>
+                            <span class="pill"><i data-lucide="sliders"></i> Itch.io Butler</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="section-container">
+                <div class="contact-card-wrapper glass-panel">
+                    <div class="contact-info">
+                        <span class="section-eyebrow">
+                            <i data-lucide="message-square"></i> Communication
+                        </span>
+                        <h2 class="contact-title">Let's Build Something Exceptional</h2>
+                        <p class="contact-desc">
+                            Interested in collaborating on a game, discussing <em>Phonophobia</em>, or inquiring about technical systems programming? Drop a message or reach out across any platform.
+                        </p>
+
+                        <div class="contact-channel-list">
+                            <div class="channel-item">
+                                <div class="channel-icon"><i data-lucide="mail"></i></div>
+                                <div>
+                                    <span class="channel-label">Email</span>
+                                    <a href="mailto:shahbazawan.dev@gmail.com" class="channel-value">shahbazawan.dev@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="channel-item">
+                                <div class="channel-icon"><i data-lucide="github"></i></div>
+                                <div>
+                                    <span class="channel-label">GitHub</span>
+                                    <a href="https://github.com/HA-Synchro" target="_blank" rel="noopener noreferrer" class="channel-value">github.com/HA-Synchro</a>
+                                </div>
+                            </div>
+                            <div class="channel-item">
+                                <div class="channel-icon"><i data-lucide="gamepad-2"></i></div>
+                                <div>
+                                    <span class="channel-label">Steam &amp; Itch</span>
+                                    <a href="https://moon-in-the-halves.itch.io/" target="_blank" rel="noopener noreferrer" class="channel-value">moon-in-the-halves.itch.io</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Asynchronous Contact Form -->
+                    <div class="contact-form-pane">
+                        <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                            <!-- Optional Web3Forms access key placeholder or Formspree integration -->
+                            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                            <input type="hidden" name="subject" value="New Portfolio Inquiry from Shahbaz Awan Portfolio">
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                            <div class="form-group">
+                                <label for="form-name">Your Name</label>
+                                <input type="text" id="form-name" name="name" required placeholder="Jane Doe" autocomplete="name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-email">Your Email Address</label>
+                                <input type="email" id="form-email" name="email" required placeholder="jane@example.com" autocomplete="email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-subject">Subject / Inquiry Type</label>
+                                <select id="form-subject" name="inquiry_type">
+                                    <option value="Game Collaboration">Game Collaboration / Freelance</option>
+                                    <option value="Phonophobia Press/Inquiry">Phonophobia Press / Publisher Inquiry</option>
+                                    <option value="Technical Question">Godot / Technical Question</option>
+                                    <option value="General Hello">General Hello</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-message">Your Message</label>
+                                <textarea id="form-message" name="message" rows="4" required placeholder="Tell me about your project, timeline, or feedback..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                                <i data-lucide="send" id="btn-icon"></i>
+                                <span id="btn-text">Send Message</span>
+                            </button>
+
+                            <!-- Inline Asynchronous Feedback Banner -->
+                            <div id="form-status" class="form-status-banner" role="status" aria-live="polite" hidden></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Landmark -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-brand">
+                    <span class="moon-icon" aria-hidden="true"><i data-lucide="moon"></i></span>
+                    <strong>Shahbaz Awan</strong>
+                </div>
+                <p class="footer-copy">
+                    &copy; <span id="current-year">2026</span> Shahbaz Awan (Moon In The Halves). All rights reserved.
+                </p>
+                <p class="footer-tagline">
+                    Designed &amp; Built with Antigravity • Deployed on GitHub Pages
+                </p>
+            </div>
+
+            <div class="footer-right">
+                <div class="footer-socials">
+                    <a href="https://github.com/HA-Synchro" target="_blank" rel="noopener noreferrer" title="GitHub" class="footer-icon-link">
+                        <i data-lucide="github"></i>
+                        <span class="sr-only">GitHub</span>
+                    </a>
+                    <a href="https://store.steampowered.com/app/4972930/Phonophobia/" target="_blank" rel="noopener noreferrer" title="Steam" class="footer-icon-link">
+                        <i data-lucide="gamepad-2"></i>
+                        <span class="sr-only">Steam</span>
+                    </a>
+                    <a href="https://moon-in-the-halves.itch.io/" target="_blank" rel="noopener noreferrer" title="itch.io" class="footer-icon-link">
+                        <i data-lucide="play"></i>
+                        <span class="sr-only">itch.io</span>
+                    </a>
+                    <a href="mailto:shahbazawan.dev@gmail.com" title="Email" class="footer-icon-link">
+                        <i data-lucide="mail"></i>
+                        <span class="sr-only">Email</span>
+                    </a>
+                </div>
+                <button id="back-to-top" class="back-to-top-btn" aria-label="Scroll back to top">
+                    <i data-lucide="arrow-up"></i>
+                    <span>Top</span>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
