@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             } catch (error) {
                 formStatus.className = 'form-status-banner status-error';
-                formStatus.innerHTML = `<i data-lucide="alert-circle"></i><span>Message sending error: ${error.message || 'Please reach out directly via shahbazawan.dev@gmail.com'}.</span>`;
+                formStatus.innerHTML = `<i data-lucide="alert-circle"></i><span>Message sending error: ${error.message || 'Please reach out directly via shahbazawan7458@gmail.com'}.</span>`;
                 if (window.lucide) window.lucide.createIcons();
             } finally {
                 submitBtn.disabled = false;
